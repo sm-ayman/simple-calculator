@@ -1,43 +1,58 @@
+.headline {
+    text-align: center;
+}
+.calc-icon{
+    font-size: 50px;
+    color: darkslategray;
+}
+
 .container {
     max-width: 400px;
     margin: 10vh auto 0 auto;
-    box-shadow: 0px 0px 43px 17px rgba(153, 153, 153, 1);
+    
 }
 
 #display {
+    border: 5px solid slateblue;
+    border-radius: 10px;
     text-align: right;
     height: 70px;
     line-height: 70px;
     padding: 16px 8px;
     font-size: 25px;
+    margin-bottom: 0.2em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .buttons {
     display: grid;
-    border-bottom: 1px solid #999;
-    border-left: 1px solid #999;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* border-bottom: 1px solid #999; */
+    /* border-left: 1px solid #999; */
+    border: 5px solid teal;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .buttons>div {
-    border-top: 0.5px solid #999;
+    border-bottom: 0.5px solid #999;
     line-height: 100px;
 }
 
-.button{
-    border: 0.5px solid #999;
+.button {
+    border-right: 0.5px solid #999;
     line-height: 100px;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
 }
 
-#equal{
+#equal {
     background-color: blueviolet;
     color: white;
 }
 
-.button:hover{
+.button:hover {
     background-color: tomato;
     color: white;
     transition: 0.5s ease-in-out;
